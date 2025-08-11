@@ -5,15 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tb_produto")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Produto {
 	
 	@Id
@@ -46,11 +40,11 @@ public class Produto {
 		this.id = id;
 	}
 
-	public String getnome() {
+	public String getNome() {
 		return nome;
 	}
 
-	public void setnome(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
@@ -66,6 +60,10 @@ public class Produto {
 		return quantidade;
 	}
 
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+
 	public String getCategoria() {
 		return categoria;
 	}
@@ -73,6 +71,6 @@ public class Produto {
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
-	
+
 	
 }
