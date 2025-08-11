@@ -20,7 +20,7 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private String name;
+	private String nome;
 	private Double preco;
 	private Integer quantidade;
 	private String categoria;
@@ -29,10 +29,10 @@ public class Produto {
 		
 	}
 
-	public Produto(Long id, String name, Double preco, Integer quantidade, String categoria) {
+	public Produto(Long id, String nome, Double preco, Integer quantidade, String categoria) {
 		super();
 		this.id = id;
-		this.name = name;
+		this.nome = nome;
 		this.preco = preco;
 		this.quantidade = quantidade;
 		this.categoria = categoria;
@@ -46,12 +46,12 @@ public class Produto {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
+	public String getnome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setnome(String nome) {
+		this.nome = nome;
 	}
 
 	public Double getPreco() {
