@@ -30,7 +30,7 @@ public class ProdutoController {
 		return repo.findAll();
 	}
 
-	@PostMapping
+	@PostMapping("/produtos")
 	public Produto criar(@RequestBody Produto p) {
 		return repo.save(p);
 	}
